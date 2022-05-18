@@ -185,6 +185,32 @@ main div h2{
     width: 100%;
 }
 
+/* MAIN DE PRODUCTOS */
+
+.phonePic{
+    margin: 2px;
+    height: max-content;
+}
+
+.cellphones{
+    font-size: x-large;
+}
+
+.filter{
+    padding: 10px;
+    background-color: gray;
+    margin: 10px 10px 0px 10px;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+.filterLore{
+    height: 25rem;
+    margin: 0px 10px 0px 10px;
+    background-color: gray;
+}
+
 /* MAIN DE LOGIN */
 
 .login{
