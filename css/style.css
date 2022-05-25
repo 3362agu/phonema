@@ -33,6 +33,7 @@ header{
     animation-iteration-count: infinite;
 }
 
+/* LOGO GIRANDO ANIMACION 
 @keyframes logo-gira {
     from{
         transform: rotate(0);
@@ -41,7 +42,7 @@ header{
     to{
         transform: rotate(1500deg);
     }
-}
+} */
 
 .title{
     grid-area: title;
@@ -71,7 +72,6 @@ nav ul{
 }
 
 .menu ul li a:hover{ /*PONER ANIMACION*/
-    zoom: 102%;
     color: rgb(231, 72, 13);
 }
 
@@ -101,14 +101,12 @@ main{
                          "sale";
 }
 
-main section img{
-    grid-area: best;
-    max-width: 100%;
-    height: 100%;
+.homeMain{
+    margin: 1%;
 }
 
 main aside img{
-    margin-top:2%;
+    margin-top: 2%;
     max-width: 100%;
     height: 100%;
     grid-area: sale;
@@ -144,6 +142,7 @@ main aside img{
 main div h2{
     color: orangered;
     font-size: 300%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* MAIN DE CONTACTO */
@@ -417,10 +416,9 @@ footer div h3{
     }
 
     main aside img{
-        margin: 0px;
+        margin-top: 2%;
         height: 80%;
         padding: 0px;
-        margin: 1%;
     }
 
     /* MAIN NOSOTROS */
