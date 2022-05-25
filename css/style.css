@@ -27,10 +27,10 @@ header{
 
 .logoPic{
     width: 100%;
-    animation-name: logo-gira;
+/*  animation-name: logo-gira;
     animation-duration: 20s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 /* LOGO GIRANDO ANIMACION 
