@@ -1,0 +1,32 @@
+/* MAIN DE PRODUCTOS */
+
+main{
+    .galleryTitle{
+        div{
+            .filter{
+                padding: 10px;
+                background-color: gray;
+                margin: 10px 10px 0px 10px;
+                font-size: xx-large;
+                color: black;
+                text-align: center;
+            }
+            .cellphones{
+                font-size: x-large;
+            }
+        }
+    }
+    .galleryContent{
+        div{
+            .filterLore{
+                height: 25rem;
+                margin: 0px 10px 0px 10px;
+                background-color: gray;
+            }
+            .phonePic{
+                margin: 2px;
+                height: max-content;
+            }
+        }
+    }
+}

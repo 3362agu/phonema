@@ -1,0 +1,54 @@
+/* FOOTER */
+
+.foot{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:"div1"
+                        "div"
+                        "div2"
+                        "div4";
+    .entrega{
+        background-color: rgb(219, 219, 219);
+        margin: 1%;
+        border: solid;
+        grid-area: div1;
+        width: 99%;
+        h3{
+            color: orangered;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .pagos{
+        margin: 0% 10% 0% 10%;
+        grid-area: div;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3{
+            color: orangered;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card{
+            height: 50px;
+        }
+    }
+    .direccion{
+        margin: 0% 1% 0% 1%;
+        grid-area: div2;
+        text-align: end;
+        h3{
+            color: orangered;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .phoneMail{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .wsp{
+        grid-area: div3;
+        display: none;
+    }
+    .rights{
+        grid-area: div4;
+    }
+}

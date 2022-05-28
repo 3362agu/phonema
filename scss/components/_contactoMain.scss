@@ -1,0 +1,41 @@
+/* MAIN DE CONTACTO */
+
+.contacto{
+    form{
+        fieldset{
+            .name{
+                margin: 2%;
+                display: inline-block;
+            }
+            .mail{
+                margin: 2%;
+                display: inline-block;
+            }
+            .tel{
+                margin: 1%;
+                display: inline-block;
+            }
+            .pais{
+                margin: 1%;
+                display: inline-block;
+            }
+            .city{
+                display: inline-block;
+            }
+            .consulta{
+                margin: 2%;
+                .consult{
+                    width: 95%;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .prom{
+        width: 100%;
+        .promImg{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

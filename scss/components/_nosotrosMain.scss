@@ -1,0 +1,29 @@
+/* MAIN DE NOSOTROS*/
+
+.nuestro{
+    display: grid;
+    grid-template-areas: "we"
+                         "prom";
+    .we{
+        width: 95%;
+        margin: 3%;
+        padding: 3%;
+         background-color: whitesmoke;
+        border-radius: 40px;
+        border-style: solid;
+        grid-area: we;
+        .who{
+            color: orangered;
+            font-size: 300%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+    .prom{
+        grid-area: prom;
+        width: 100%;
+        .promImg{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

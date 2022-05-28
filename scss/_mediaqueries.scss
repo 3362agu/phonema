@@ -1,0 +1,208 @@
+/* MEDIA QUERIES */
+
+/* MQ DE TABLET */
+
+@media screen and (min-width: 600px){
+    /* Header */
+    header{
+        .title{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+        .menu{
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    /* Footer */
+    .foot{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 0.7fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-areas:"div1 div1 div1"
+                            "div div2 div3"
+                            "div4 div4 div4";
+        .wsp{
+            display: block;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    /* Main Contacto */
+    .contacto{
+        form{
+            margin: 2%;
+            width: 80%;
+            fieldset{
+                .name{
+                    margin: 2%;
+                    display: inline-block;
+                }
+                .mail{
+                    margin: 2%;
+                    display: inline-block;
+                }
+                .tel{
+                    margin: 2%;
+                    display: inline-block;
+                }
+                .pais{
+                    margin: 2%;
+                    display: inline-block;
+                }
+                .city{
+                    margin: 2%;
+                    display: inline-block;
+                }
+                .consulta{
+                    margin: 2%;
+                    .consult{
+                        width: 95%;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+    /* Main Login */
+    main{
+        .login{
+            margin: 10px 20%;
+        }
+    }
+}
+
+/* MQ DE PC */
+
+@media screen and (min-width: 1024px){
+    /* Header */
+    header{
+        display: grid;
+        grid-template-columns: 0.7fr 2fr 2fr 2.5fr;
+        grid-template-areas: "logo title title search"
+                             "logo menu menu search";
+        align-items: center;
+        .logo{
+            .logoPic{
+                width: 100%;
+            }
+        }
+        .title{
+            display: flex;
+            justify-content: start;
+        }
+        .menu{
+            ul{
+                display: flex;
+                justify-content: start;
+                gap: 40px;
+                li{
+                    font-size: 28px;
+                }
+            }
+        }
+        .searchDad{
+            .search{
+                margin: 10% 5% 0% 0%;
+                width: 100%;
+                height: 2rem;
+            }
+        }
+    }
+    /* Main Index */
+    .homeMain{
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        .sale{
+            .img2{
+                margin-top: 2%;
+                height: 80%;
+                padding: 0px;
+            }
+        }
+    }
+    /* Main Nosotros */
+    .nuestro{
+        .we{
+            width: 60%;
+            margin: 1%;
+            padding: 1%;
+            background-color: whitesmoke;
+            border-radius: 40px;
+            border-style: solid;
+            .who{
+                color: orangered;
+                font-size: 300%;
+            }
+        }
+    }
+    /* Main Contacto */
+    .contacto{
+        form{
+            margin: 2%;
+            width: 60%;
+        }
+    }
+    /* Main Login */
+    main{
+        .login{
+            margin: 10px 30%;
+        }
+    }
+    /* Footer */
+    .foot{
+        margin: 10px;
+        display: grid;
+        height: 200px;
+        grid-template-columns: repeat(4, 20% 55% 15% 10%);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:"div div1 div2 div3"
+                            "div4 div4 div4 div4";
+        .entrega{
+            grid-area: div1;
+            h3{
+                color: orangered;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+        .pagos{
+            grid-area: div;
+            h3{
+                color: orangered;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .card{
+                height: 50px;
+            }
+        }
+        .direccion{
+            grid-area: div2;
+            margin: 0px 30px;
+            text-align: end;
+            h3{
+                color: orangered;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .phoneMail{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        .wsp{
+            grid-area: div3;
+        }
+        .rights{
+            grid-area: div4;
+            margin: 30px 10px;
+        }
+    }
+}

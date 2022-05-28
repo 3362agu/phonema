@@ -1,0 +1,26 @@
+/* MAIN DE LOGIN */
+
+main{
+    .login{
+        margin: 10px 10%;
+        background-color: orange;
+        padding: 50px;
+        text-align: center;
+        text-justify: center;
+        border-radius: 100px;
+        color: orangered;
+        font-family: 'Anton', sans-serif;
+        font-size: 20px;
+        .userPass{
+            height: 35px;
+            width: 70%;
+        }
+    }
+    .prom{
+        width: 100%;
+        .promImg{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

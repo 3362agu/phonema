@@ -1,0 +1,338 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: white; }
+
+/* HEADER */
+header {
+  background-color: goldenrod;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "logo title" "logo search" "logo menu";
+  align-items: center; }
+  header .logo {
+    padding: 2%;
+    grid-area: logo; }
+    header .logo .logoPic {
+      width: 100%; }
+  header .title {
+    grid-area: title;
+    font-size: 450%;
+    font-family: 'Audiowide', cursive; }
+  header .menu {
+    width: 100%;
+    list-style-type: none;
+    padding: 5px;
+    grid-area: menu; }
+    header .menu ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header .menu ul li {
+        list-style-type: none;
+        font-size: 20px;
+        margin: 3px;
+        color: #fd1303;
+        font-family: 'Anton', sans-serif; }
+        header .menu ul li a {
+          color: #e7480d;
+          text-decoration: none;
+          color: white;
+          font-family: 'Anton', sans-serif; }
+  header .searchDad {
+    display: flex;
+    justify-content: center; }
+    header .searchDad .search {
+      grid-area: search;
+      width: 90%;
+      height: 2rem; }
+
+/* MAIN DE HOME */
+.homeMain {
+  margin: 2%;
+  display: grid;
+  grid-template-areas: "best" "sale"; }
+  .homeMain .sale .img2 {
+    margin-top: 2%;
+    max-width: 100%;
+    height: 100%;
+    grid-area: sale; }
+
+/* MAIN DE NOSOTROS*/
+.nuestro {
+  display: grid;
+  grid-template-areas: "we" "prom"; }
+  .nuestro .we {
+    width: 95%;
+    margin: 3%;
+    padding: 3%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    border-style: solid;
+    grid-area: we; }
+    .nuestro .we .who {
+      color: orangered;
+      font-size: 300%;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  .nuestro .prom {
+    grid-area: prom;
+    width: 100%; }
+    .nuestro .prom .promImg {
+      max-width: 100%;
+      height: auto; }
+
+/* MAIN DE CONTACTO */
+.contacto form fieldset .name {
+  margin: 2%;
+  display: inline-block; }
+
+.contacto form fieldset .mail {
+  margin: 2%;
+  display: inline-block; }
+
+.contacto form fieldset .tel {
+  margin: 1%;
+  display: inline-block; }
+
+.contacto form fieldset .pais {
+  margin: 1%;
+  display: inline-block; }
+
+.contacto form fieldset .city {
+  display: inline-block; }
+
+.contacto form fieldset .consulta {
+  margin: 2%; }
+  .contacto form fieldset .consulta .consult {
+    width: 95%;
+    height: 100px; }
+
+.contacto .prom {
+  width: 100%; }
+  .contacto .prom .promImg {
+    max-width: 100%;
+    height: auto; }
+
+/* MAIN DE PRODUCTOS */
+main .galleryTitle div .filter {
+  padding: 10px;
+  background-color: gray;
+  margin: 10px 10px 0px 10px;
+  font-size: xx-large;
+  color: black;
+  text-align: center; }
+
+main .galleryTitle div .cellphones {
+  font-size: x-large; }
+
+main .galleryContent div .filterLore {
+  height: 25rem;
+  margin: 0px 10px 0px 10px;
+  background-color: gray; }
+
+main .galleryContent div .phonePic {
+  margin: 2px;
+  height: max-content; }
+
+/* MAIN DE LOGIN */
+main .login {
+  margin: 10px 10%;
+  background-color: orange;
+  padding: 50px;
+  text-align: center;
+  text-justify: center;
+  border-radius: 100px;
+  color: orangered;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px; }
+  main .login .userPass {
+    height: 35px;
+    width: 70%; }
+
+main .prom {
+  width: 100%; }
+  main .prom .promImg {
+    max-width: 100%;
+    height: auto; }
+
+/* FOOTER */
+.foot {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "div1" "div" "div2" "div4"; }
+  .foot .entrega {
+    background-color: #dbdbdb;
+    margin: 1%;
+    border: solid;
+    grid-area: div1;
+    width: 99%; }
+    .foot .entrega h3 {
+      color: orangered;
+      font-family: Arial, Helvetica, sans-serif; }
+  .foot .pagos {
+    margin: 0% 10% 0% 10%;
+    grid-area: div;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .foot .pagos h3 {
+      color: orangered;
+      font-family: Arial, Helvetica, sans-serif; }
+    .foot .pagos .card {
+      height: 50px; }
+  .foot .direccion {
+    margin: 0% 1% 0% 1%;
+    grid-area: div2;
+    text-align: end; }
+    .foot .direccion h3 {
+      color: orangered;
+      font-family: Arial, Helvetica, sans-serif; }
+    .foot .direccion .phoneMail {
+      font-family: Arial, Helvetica, sans-serif; }
+  .foot .wsp {
+    grid-area: div3;
+    display: none; }
+  .foot .rights {
+    grid-area: div4; }
+
+/* MEDIA QUERIES */
+/* MQ DE TABLET */
+@media screen and (min-width: 600px) {
+  /* Header */
+  header .title {
+    display: flex;
+    justify-content: center;
+    padding: 5px; }
+  header .menu ul {
+    display: flex;
+    justify-content: space-evenly; }
+  /* Footer */
+  .foot {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.7fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "div1 div1 div1" "div div2 div3" "div4 div4 div4"; }
+    .foot .wsp {
+      display: block; }
+      .foot .wsp img {
+        width: 100%;
+        height: auto; }
+  /* Main Contacto */
+  .contacto form {
+    margin: 2%;
+    width: 80%; }
+    .contacto form fieldset .name {
+      margin: 2%;
+      display: inline-block; }
+    .contacto form fieldset .mail {
+      margin: 2%;
+      display: inline-block; }
+    .contacto form fieldset .tel {
+      margin: 2%;
+      display: inline-block; }
+    .contacto form fieldset .pais {
+      margin: 2%;
+      display: inline-block; }
+    .contacto form fieldset .city {
+      margin: 2%;
+      display: inline-block; }
+    .contacto form fieldset .consulta {
+      margin: 2%; }
+      .contacto form fieldset .consulta .consult {
+        width: 95%;
+        height: 100px; }
+  /* Main Login */
+  main .login {
+    margin: 10px 20%; } }
+
+/* MQ DE PC */
+@media screen and (min-width: 1024px) {
+  /* Header */
+  header {
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 2fr 2.5fr;
+    grid-template-areas: "logo title title search" "logo menu menu search";
+    align-items: center; }
+    header .logo .logoPic {
+      width: 100%; }
+    header .title {
+      display: flex;
+      justify-content: start; }
+    header .menu ul {
+      display: flex;
+      justify-content: start;
+      gap: 40px; }
+      header .menu ul li {
+        font-size: 28px; }
+    header .searchDad .search {
+      margin: 10% 5% 0% 0%;
+      width: 100%;
+      height: 2rem; }
+  /* Main Index */
+  .homeMain {
+    margin: 2%;
+    display: flex;
+    flex-direction: column; }
+    .homeMain .sale .img2 {
+      margin-top: 2%;
+      height: 80%;
+      padding: 0px; }
+  /* Main Nosotros */
+  .nuestro .we {
+    width: 60%;
+    margin: 1%;
+    padding: 1%;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    border-style: solid; }
+    .nuestro .we .who {
+      color: orangered;
+      font-size: 300%; }
+  /* Main Contacto */
+  .contacto form {
+    margin: 2%;
+    width: 60%; }
+  /* Main Login */
+  main .login {
+    margin: 10px 30%; }
+  /* Footer */
+  .foot {
+    margin: 10px;
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 20% 55% 15% 10%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "div div1 div2 div3" "div4 div4 div4 div4"; }
+    .foot .entrega {
+      grid-area: div1; }
+      .foot .entrega h3 {
+        color: orangered;
+        font-family: Arial, Helvetica, sans-serif; }
+      .foot .entrega p {
+        padding: 10px;
+        border-radius: 5px; }
+    .foot .pagos {
+      grid-area: div; }
+      .foot .pagos h3 {
+        color: orangered;
+        font-family: Arial, Helvetica, sans-serif; }
+      .foot .pagos .card {
+        height: 50px; }
+    .foot .direccion {
+      grid-area: div2;
+      margin: 0px 30px;
+      text-align: end; }
+      .foot .direccion h3 {
+        color: orangered;
+        font-family: Arial, Helvetica, sans-serif; }
+      .foot .direccion .phoneMail {
+        font-family: Arial, Helvetica, sans-serif; }
+    .foot .wsp {
+      grid-area: div3; }
+    .foot .rights {
+      grid-area: div4;
+      margin: 30px 10px; } }
