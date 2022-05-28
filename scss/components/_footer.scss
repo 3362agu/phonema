@@ -15,7 +15,7 @@
         width: 99%;
         h3{
             color: orangered;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $font2;
         }
     }
     .pagos{
@@ -26,7 +26,7 @@
         align-items: center;
         h3{
             color: orangered;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $font2;
         }
         .card{
             height: 50px;
@@ -38,10 +38,10 @@
         text-align: end;
         h3{
             color: orangered;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $font2;
         }
         .phoneMail{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: $font2;
         }
     }
     .wsp{

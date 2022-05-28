@@ -37,12 +37,12 @@ header {
         font-size: 20px;
         margin: 3px;
         color: #fd1303;
-        font-family: 'Anton', sans-serif; }
+        font-family: "Anton", sans-serif; }
         header .menu ul li a {
           color: #e7480d;
           text-decoration: none;
           color: white;
-          font-family: 'Anton', sans-serif; }
+          font-family: "Anton", sans-serif; }
   header .searchDad {
     display: flex;
     justify-content: center; }
