@@ -49,8 +49,7 @@ header{
         justify-content: center;
         .search{
             grid-area: search;
-            width: 90%;
-            height: 2rem;
+            @include mesures (90%, 2rem);
         }
     }
 }

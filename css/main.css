@@ -7,6 +7,14 @@
 body {
   background-color: white; }
 
+.contacto form fieldset .name, .contacto form fieldset .mail, .contacto form fieldset .tel, .contacto form fieldset .pais {
+  margin: 2%;
+  display: inline-block; }
+
+.foot .entrega h3, .foot .pagos h3, .foot .direccion h3 {
+  color: orangered;
+  font-family: Arial, Helvetica, sans-serif; }
+
 /* HEADER */
 header {
   background-color: goldenrod;
@@ -86,22 +94,6 @@ header {
       height: auto; }
 
 /* MAIN DE CONTACTO */
-.contacto form fieldset .name {
-  margin: 2%;
-  display: inline-block; }
-
-.contacto form fieldset .mail {
-  margin: 2%;
-  display: inline-block; }
-
-.contacto form fieldset .tel {
-  margin: 1%;
-  display: inline-block; }
-
-.contacto form fieldset .pais {
-  margin: 1%;
-  display: inline-block; }
-
 .contacto form fieldset .city {
   display: inline-block; }
 
@@ -150,8 +142,8 @@ main .login {
   font-family: 'Anton', sans-serif;
   font-size: 20px; }
   main .login .userPass {
-    height: 35px;
-    width: 70%; }
+    width: 70%;
+    height: 35px; }
 
 main .prom {
   width: 100%; }
@@ -170,27 +162,18 @@ main .prom {
     border: solid;
     grid-area: div1;
     width: 99%; }
-    .foot .entrega h3 {
-      color: orangered;
-      font-family: Arial, Helvetica, sans-serif; }
   .foot .pagos {
     margin: 0% 10% 0% 10%;
     grid-area: div;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .foot .pagos h3 {
-      color: orangered;
-      font-family: Arial, Helvetica, sans-serif; }
     .foot .pagos .card {
       height: 50px; }
   .foot .direccion {
     margin: 0% 1% 0% 1%;
     grid-area: div2;
     text-align: end; }
-    .foot .direccion h3 {
-      color: orangered;
-      font-family: Arial, Helvetica, sans-serif; }
     .foot .direccion .phoneMail {
       font-family: Arial, Helvetica, sans-serif; }
   .foot .wsp {

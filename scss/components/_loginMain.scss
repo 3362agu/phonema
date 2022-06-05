@@ -12,8 +12,7 @@ main{
         font-family: 'Anton', sans-serif;
         font-size: 20px;
         .userPass{
-            height: 35px;
-            width: 70%;
+            @include mesures (70%, 35px);
         }
     }
     .prom{

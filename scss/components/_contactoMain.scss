@@ -4,20 +4,16 @@
     form{
         fieldset{
             .name{
-                margin: 2%;
-                display: inline-block;
+                @extend %form;
             }
             .mail{
-                margin: 2%;
-                display: inline-block;
+                @extend %form;
             }
             .tel{
-                margin: 1%;
-                display: inline-block;
+                @extend %form;
             }
             .pais{
-                margin: 1%;
-                display: inline-block;
+                @extend %form;
             }
             .city{
                 display: inline-block;

@@ -40,24 +40,19 @@
             width: 80%;
             fieldset{
                 .name{
-                    margin: 2%;
-                    display: inline-block;
+                    @include formulario;
                 }
                 .mail{
-                    margin: 2%;
-                    display: inline-block;
+                    @include formulario;
                 }
                 .tel{
-                    margin: 2%;
-                    display: inline-block;
+                    @include formulario;
                 }
                 .pais{
-                    margin: 2%;
-                    display: inline-block;
+                    @include formulario;
                 }
                 .city{
-                    margin: 2%;
-                    display: inline-block;
+                    @include formulario;
                 }
                 .consulta{
                     margin: 2%;
@@ -167,8 +162,7 @@
         .entrega{
             grid-area: div1;
             h3{
-                color: orangered;
-                font-family: Arial, Helvetica, sans-serif;
+                @include h3;
             }
             p{
                 padding: 10px;
@@ -178,8 +172,7 @@
         .pagos{
             grid-area: div;
             h3{
-                color: orangered;
-                font-family: Arial, Helvetica, sans-serif;
+                @include h3;
             }
             .card{
                 height: 50px;
@@ -190,8 +183,7 @@
             margin: 0px 30px;
             text-align: end;
             h3{
-                color: orangered;
-                font-family: Arial, Helvetica, sans-serif;
+                @include h3;
             }
             .phoneMail{
                 font-family: Arial, Helvetica, sans-serif;

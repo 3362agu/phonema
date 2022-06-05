@@ -1,0 +1,16 @@
+// apliqué los mixin iguales a los extend, debido a que no se pueden utilizar extends en las MQ
+
+@mixin formulario {
+    margin: 2%;
+    display: inline-block;
+}
+
+@mixin h3 {
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin mesures ($width, $height){
+    width: $width;
+    height: $height;
+}
