@@ -2,9 +2,22 @@
 
 /* MQ DE TABLET */
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 550px){
     /* Header */
     header{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "logo title"
+                             "logo search"
+                             "logo menu";
+        .logo{
+            padding: 0;
+            margin: 0;
+        .logoPic{
+            width: 120%;
+        }
+        }
+
         .title{
             display: flex;
             justify-content: center;
@@ -78,16 +91,17 @@
     /* Header */
     header{
         display: grid;
-        grid-template-columns: 0.7fr 2fr 2fr 2.5fr;
+        grid-template-columns: 2fr 2fr 2fr 2.5fr;
         grid-template-areas: "logo title title search"
                              "logo menu menu search";
         align-items: center;
         .logo{
             .logoPic{
-                width: 100%;
+                width: 110%;
             }
         }
         .title{
+            font-size: 600%;
             display: flex;
             justify-content: start;
         }
@@ -99,13 +113,6 @@
                 li{
                     font-size: 28px;
                 }
-            }
-        }
-        .searchDad{
-            .search{
-                margin: 10% 5% 0% 0%;
-                width: 100%;
-                height: 2rem;
             }
         }
     }

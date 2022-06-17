@@ -1,24 +1,28 @@
 /* HEADER */
 
 header{
-    background-color: goldenrod;
+    background-image: url("../../img/bgImgTres.jpg");
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "logo title"
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title"
                          "logo search"
                          "logo menu";
     align-items: center;
     .logo{
-        padding: 2%;
+        padding: 0;
         grid-area: logo;
         .logoPic{
-            width: 100%;
+            width: 200%;
         }
     }
     .title{
+        display: grid;
+        place-content: center;
+        text-shadow: 0 0 25px black;
+        color: #F7D716;
         grid-area: title;
         font-size: 450%;
-        font-family: 'Audiowide', cursive;
+        font-family: $font5;
     }
     .menu{
         width: 100%;
@@ -30,26 +34,35 @@ header{
             flex-direction: row;
             justify-content: space-between;
             li{
-                list-style-type: none;
+                text-shadow: 0 0 10px black;
                 font-size: 20px;
+                list-style-type: none;
                 margin: 3px;
                 color: rgb(253, 19, 3);
-                font-family: $font1;
+                font-family: $font0;
                 a{
+                    text-shadow: 0 0 10px black;
                     color: rgb(231, 72, 13);
                     text-decoration: none;
-                    color: white;
+                    color: thistle;
                     font-family: $font1;
+                }
+                a:hover{
+                    color: white;
                 }
             }
         }
     }
-    .searchDad{
-        display: flex;
-        justify-content: center;
+    div{
         .search{
-            grid-area: search;
-            @include mesures (90%, 2rem);
+            color: white;
+            font-family: $font3;
+            background-color: #F24C4C;
+            border: 2px solid orange;
+        }
+        .search:hover{
+            background-color: brown;
+            border: 2px solid white;
         }
     }
 }
