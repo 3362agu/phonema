@@ -15,6 +15,7 @@
         width: 99%;
         h3{
             @extend %h3;
+            font-family: $font1;
         }
     }
     .pagos{
@@ -25,6 +26,7 @@
         align-items: center;
         h3{
             @extend %h3;
+            font-family: $font1;
         }
         .card{
             height: 50px;
@@ -36,16 +38,31 @@
         text-align: end;
         h3{
             @extend %h3;
+            font-family: $font1;
         }
         .phoneMail{
             font-family: $font2;
         }
     }
     .wsp{
+        a{
+            button{
+                background-color: white;
+                border: 0px;
+                outline: none;
+            }
+        }
         grid-area: div3;
         display: none;
     }
     .rights{
+        background-image: url(../img/bgImgTres.jpg);
         grid-area: div4;
+        section{
+            color: white;
+        }
+        address{
+            color: white;
+        }
     }
 }

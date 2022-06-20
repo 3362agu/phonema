@@ -17,7 +17,7 @@ body {
 
 /* HEADER */
 header {
-  background-image: url("../../img/bgImgTres.jpg");
+  background-image: url(../img/bgImgTres.jpg);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title title" "logo search" "logo menu";
@@ -171,25 +171,40 @@ main .prom {
     border: solid;
     grid-area: div1;
     width: 99%; }
+    .foot .entrega h3 {
+      font-family: "Anton", sans-serif; }
   .foot .pagos {
     margin: 0% 10% 0% 10%;
     grid-area: div;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .foot .pagos h3 {
+      font-family: "Anton", sans-serif; }
     .foot .pagos .card {
       height: 50px; }
   .foot .direccion {
     margin: 0% 1% 0% 1%;
     grid-area: div2;
     text-align: end; }
+    .foot .direccion h3 {
+      font-family: "Anton", sans-serif; }
     .foot .direccion .phoneMail {
       font-family: Arial, Helvetica, sans-serif; }
   .foot .wsp {
     grid-area: div3;
     display: none; }
+    .foot .wsp a button {
+      background-color: white;
+      border: 0px;
+      outline: none; }
   .foot .rights {
+    background-image: url(../img/bgImgTres.jpg);
     grid-area: div4; }
+    .foot .rights section {
+      color: white; }
+    .foot .rights address {
+      color: white; }
 
 /* MEDIA QUERIES */
 /* MQ DE TABLET */
@@ -215,13 +230,11 @@ main .prom {
   .foot {
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.7fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-areas: "div1 div1 div1" "div div2 div3" "div4 div4 div4"; }
     .foot .wsp {
       display: block; }
       .foot .wsp img {
-        width: 100%;
-        height: auto; }
+        width: 100%; }
   /* Main Contacto */
   .contacto form {
     margin: 2%;
@@ -299,17 +312,17 @@ main .prom {
     margin: 10px 30%; }
   /* Footer */
   .foot {
-    margin: 10px;
     display: grid;
     height: 200px;
-    grid-template-columns: repeat(4, 20% 55% 15% 10%);
+    grid-template-columns: repeat(4, 20% 50% 20% 10%);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "div div1 div2 div3" "div4 div4 div4 div4"; }
     .foot .entrega {
       grid-area: div1; }
       .foot .entrega h3 {
         color: orangered;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Audiowide", cursive; }
       .foot .entrega p {
         padding: 10px;
         border-radius: 5px; }
@@ -317,7 +330,9 @@ main .prom {
       grid-area: div; }
       .foot .pagos h3 {
         color: orangered;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-family: "Anton", sans-serif; }
       .foot .pagos .card {
         height: 50px; }
     .foot .direccion {
@@ -326,11 +341,11 @@ main .prom {
       text-align: end; }
       .foot .direccion h3 {
         color: orangered;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Anton", sans-serif; }
       .foot .direccion .phoneMail {
         font-family: Arial, Helvetica, sans-serif; }
     .foot .wsp {
       grid-area: div3; }
     .foot .rights {
-      grid-area: div4;
-      margin: 30px 10px; } }
+      grid-area: div4; } }

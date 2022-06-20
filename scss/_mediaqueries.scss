@@ -34,7 +34,6 @@
     .foot{
         display: grid;
         grid-template-columns: 0.5fr 2fr 0.7fr;
-        grid-template-rows: 0.5fr 1fr 1fr;
         grid-template-areas:"div1 div1 div1"
                             "div div2 div3"
                             "div4 div4 div4";
@@ -42,7 +41,6 @@
             display: block;
             img{
                 width: 100%;
-                height: auto;
             }
         }
     }
@@ -159,10 +157,9 @@
     }
     /* Footer */
     .foot{
-        margin: 10px;
         display: grid;
         height: 200px;
-        grid-template-columns: repeat(4, 20% 55% 15% 10%);
+        grid-template-columns: repeat(4, 20% 50% 20% 10%);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:"div div1 div2 div3"
                             "div4 div4 div4 div4";
@@ -170,6 +167,7 @@
             grid-area: div1;
             h3{
                 @include h3;
+                font-family: $font0;
             }
             p{
                 padding: 10px;
@@ -180,6 +178,8 @@
             grid-area: div;
             h3{
                 @include h3;
+                font-size: large;
+                font-family: $font1;
             }
             .card{
                 height: 50px;
@@ -191,6 +191,7 @@
             text-align: end;
             h3{
                 @include h3;
+                font-family: $font1;
             }
             .phoneMail{
                 font-family: Arial, Helvetica, sans-serif;
@@ -201,7 +202,6 @@
         }
         .rights{
             grid-area: div4;
-            margin: 30px 10px;
         }
     }
 }
