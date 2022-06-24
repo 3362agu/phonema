@@ -33,10 +33,10 @@
     /* Footer */
     .foot{
         display: grid;
-        grid-template-columns: 0.5fr 2fr 0.7fr;
+        grid-template-columns: 1.5fr 1fr 0.2fr;
         grid-template-areas:"div1 div1 div1"
                             "div div2 div3"
-                            "div4 div4 div4";
+                            "div4 div4 social";
         .wsp{
             display: block;
             img{
@@ -159,10 +159,11 @@
     .foot{
         display: grid;
         height: 200px;
-        grid-template-columns: repeat(4, 20% 50% 20% 10%);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:"div div1 div2 div3"
-                            "div4 div4 div4 div4";
+        grid-template-columns: 30% 40% 25% 5%;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:"div div div div"
+                            "div1 div1 div2 div3"
+                            "div4 div4 div4 social";
         .entrega{
             grid-area: div1;
             h3{
@@ -175,10 +176,11 @@
             }
         }
         .pagos{
+            justify-content: space-evenly;
             grid-area: div;
             h3{
                 @include h3;
-                font-size: large;
+                font-size: xx-large;
                 font-family: $font1;
             }
             .card{
