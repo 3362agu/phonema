@@ -161,19 +161,31 @@ main .galleryContent div .phonePic {
   height: max-content; }
 
 /* MAIN DE LOGIN */
-main .login {
+main .fLogin {
+  background-image: url(../img/bgImgCuatro.jpg);
+  background-size: cover;
   margin: 10px 10%;
-  background-color: orange;
   padding: 50px;
   text-align: center;
   text-justify: center;
-  border-radius: 100px;
+  border-radius: 50px;
   color: orangered;
   font-family: 'Anton', sans-serif;
-  font-size: 20px; }
-  main .login .userPass {
-    width: 70%;
-    height: 35px; }
+  text-shadow: 0 0 15px black;
+  font-size: medium; }
+  main .fLogin div {
+    margin: 30px; }
+  main .fLogin .userPass {
+    width: 100%;
+    height: 30px; }
+  main .fLogin input {
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    font-family: "Anton", sans-serif; }
 
 main .prom {
   width: 100%; }
@@ -293,8 +305,9 @@ main .prom {
         width: 95%;
         height: 100px; }
   /* Main Login */
-  main .login {
-    margin: 10px 20%; } }
+  main .fLogin {
+    margin: 10px 20%;
+    font-size: large; } }
 
 /* MQ DE PC */
 @media screen and (min-width: 1024px) {
@@ -341,8 +354,9 @@ main .prom {
     margin: 2%;
     width: 60%; }
   /* Main Login */
-  main .login {
-    margin: 10px 30%; }
+  main .fLogin {
+    margin: 10px 30%;
+    font-size: x-large; }
   /* Footer */
   .foot {
     display: grid;

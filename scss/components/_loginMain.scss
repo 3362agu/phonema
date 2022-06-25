@@ -1,18 +1,31 @@
 /* MAIN DE LOGIN */
 
 main{
-    .login{
+    .fLogin{
+        div{
+            margin: 30px;
+        }
+        background-image: url(../img/bgImgCuatro.jpg);
+        background-size: cover;
         margin: 10px 10%;
-        background-color: orange;
         padding: 50px;
         text-align: center;
         text-justify: center;
-        border-radius: 100px;
+        border-radius: 50px;
         color: orangered;
         font-family: 'Anton', sans-serif;
-        font-size: 20px;
+        text-shadow: 0 0 15px black;
+        font-size: medium;
         .userPass{
-            @include mesures (70%, 35px);
+            @include mesures (100%, 30px);
+        }
+        input{      background-color: black;
+                    color: white;
+                    font-size: large;
+                    border-radius: 10px;
+                    padding: 10px;
+                    font-size: large;
+                    font-family: $font1;
         }
     }
     .prom{
