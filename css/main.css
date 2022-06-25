@@ -7,7 +7,7 @@
 body {
   background-color: white; }
 
-.contacto form fieldset .name, .contacto form fieldset .mail, .contacto form fieldset .tel, .contacto form fieldset .pais {
+.contacto form fieldset .name, .contacto form fieldset .mail, .contacto form fieldset .tel, .contacto form fieldset .pais, .contacto form fieldset .city {
   margin: 2%;
   display: inline-block; }
 
@@ -103,14 +103,35 @@ header {
       height: auto; }
 
 /* MAIN DE CONTACTO */
-.contacto form fieldset .city {
-  display: inline-block; }
-
-.contacto form fieldset .consulta {
-  margin: 2%; }
-  .contacto form fieldset .consulta .consult {
-    width: 95%;
-    height: 100px; }
+.contacto form fieldset {
+  margin: 20px;
+  background-image: url(../img/bgImgUno.png);
+  background-size: cover;
+  border-radius: 20px; }
+  .contacto form fieldset div select {
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px; }
+  .contacto form fieldset div label {
+    color: white;
+    font-size: large;
+    text-shadow: 0 0 4px black; }
+  .contacto form fieldset div input {
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 10px; }
+  .contacto form fieldset div .button1 {
+    margin: 0px 0px 10px 20px;
+    padding: 10px;
+    font-size: large;
+    font-family: "Anton", sans-serif; }
+  .contacto form fieldset .consulta {
+    margin: 2%; }
+    .contacto form fieldset .consulta .consult {
+      width: 95%;
+      height: 100px; }
 
 .contacto .prom {
   width: 100%; }

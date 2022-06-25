@@ -3,6 +3,35 @@
 .contacto{
     form{
         fieldset{
+            div{
+                select{
+                    background-color: black;
+                    color: white;
+                    font-size: large;
+                    border-radius: 10px;
+                }
+                label{
+                    color: white;
+                    font-size: large;
+                    text-shadow: 0 0 4px black;
+                }
+                input{
+                    background-color: black;
+                    color: white;
+                    font-size: large;
+                    border-radius: 10px;
+                }
+                .button1{
+                    margin: 0px 0px 10px 20px;
+                    padding: 10px;
+                    font-size: large;
+                    font-family: $font1;
+                }
+            }
+            margin: 20px;
+            background-image: url(../img/bgImgUno.png);
+            background-size: cover;
+            border-radius: 20px;
             .name{
                 @extend %form;
             }
@@ -16,7 +45,7 @@
                 @extend %form;
             }
             .city{
-                display: inline-block;
+                @extend %form;
             }
             .consulta{
                 margin: 2%;
